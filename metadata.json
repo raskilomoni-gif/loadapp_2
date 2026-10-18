@@ -1,0 +1,10 @@
+{
+  "name": "Remix HaulFlow - Freight \u0026 Truck Logistics Escrow",
+  "description": "On-demand freight matching and cargo transport app with dual-authorization fuel escrow, 2-phase payments, and real-time shipment GPS tracking.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

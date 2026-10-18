@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="url(#amberGrad)" stroke-width="8" opacity="0.4" />
+
+  <!-- Inner Truck Graphic (Centered in Safe Zone) -->
+  <g transform="translate(66, 110)">
+    <!-- Trailer Body -->
+    <rect x="20" y="50" width="230" height="150" rx="16" fill="#1e293b" stroke="#334155" stroke-width="8" />
+    <line x1="75" y1="50" x2="75" y2="200" stroke="#0f172a" stroke-width="6" />
+    <line x1="135" y1="50" x2="135" y2="200" stroke="#0f172a" stroke-width="6" />
+    <line x1="195" y1="50" x2="195" y2="200" stroke="#0f172a" stroke-width="6" />
+
+    <!-- Cab Unit -->
+    <path d="M 250 110 L 305 110 L 335 150 L 355 150 A 10 10 0 0 1 365 160 L 365 200 L 250 200 Z" fill="url(#amberGrad)" />
+    <!-- Cab Window -->
+    <polygon points="265,120 300,120 325,150 265,150" fill="#0f172a" opacity="0.85" />
+    <!-- Headlight -->
+    <circle cx="360" cy="180" r="7" fill="#ffffff" filter="url(#glow)" />
+
+    <!-- Chassis Beam -->
+    <rect x="20" y="200" width="345" height="14" rx="4" fill="#475569" />
+
+    <!-- Wheels -->
+    <!-- Trailer Wheels -->
+    <circle cx="70" cy="225" r="28" fill="#090d16" stroke="#94a3b8" stroke-width="7" />
+    <circle cx="70" cy="225" r="12" fill="#334155" />
+    <circle cx="130" cy="225" r="28" fill="#090d16" stroke="#94a3b8" stroke-width="7" />
+    <circle cx="130" cy="225" r="12" fill="#334155" />
+
+    <!-- Drive Wheels -->
+    <circle cx="275" cy="225" r="28" fill="#090d16" stroke="#94a3b8" stroke-width="7" />
+    <circle cx="275" cy="225" r="12" fill="#334155" />
+    <!-- Steer Wheel -->
+    <circle cx="335" cy="225" r="28" fill="#090d16" stroke="#94a3b8" stroke-width="7" />
+    <circle cx="335" cy="225" r="12" fill="#334155" />
+
+    <!-- Escrow Security Shield Badge in Center of Trailer -->
+    <g transform="translate(95, 80)">
+      <path d="M 40 0 L 80 15 L 80 55 C 80 85 40 105 40 105 C 40 105 0 85 0 55 L 0 15 Z" fill="url(#shieldGrad)" stroke="#ffffff" stroke-width="4" filter="url(#glow)" />
+      <!-- Lock Shackle -->
+      <path d="M 28 42 L 28 32 C 28 25 33 20 40 20 C 47 20 52 25 52 32 L 52 42" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+      <!-- Lock Body -->
+      <rect x="22" y="42" width="36" height="28" rx="6" fill="#ffffff" />
+      <circle cx="40" cy="54" r="3.5" fill="#059669" />
+      <path d="M 40 57 L 40 64" stroke="#059669" stroke-width="2.5" />
+    </g>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="256" y="435" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="4">
+    HAUL<tspan fill="#f59e0b">FLOW</tspan>
+  </text>
+  <text x="256" y="468" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="3">
+    FREIGHT ESCROW
+  </text>
+</svg>

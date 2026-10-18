@@ -1,0 +1,33 @@
+{
+  "id": "/",
+  "name": "HaulFlow - Freight Logistics & Escrow",
+  "short_name": "HaulFlow",
+  "description": "On-demand freight matching and cargo transport app with dual-authorization fuel escrow, 2-phase payments, and real-time shipment GPS tracking.",
+  "theme_color": "#090d16",
+  "background_color": "#090d16",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "/",
+  "scope": "/",
+  "categories": ["business", "logistics", "productivity"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
